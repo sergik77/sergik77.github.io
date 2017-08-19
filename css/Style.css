@@ -1,0 +1,472 @@
+@font-face {
+    font-family: HKGrotesk; /* Имя шрифта */
+    src: url(../font/HKGrotesk-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: LeagueSpartan; /* Имя шрифта */
+    src: url(../font/LeagueSpartan-Bold.otf); /* Путь к файлу со шрифтом */
+}
+* {
+    margin: 0;
+    padding: 0;
+}   
+
+body {
+}
+
+.bg {
+    margin: auto;
+    background-color: #272f45;
+    max-width: max-content;
+    /*height: 2600px;*/
+    padding: 0 80px 60px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 63px 20px 0 20px;
+    max-width: 1160px;
+    height: 72px;
+}
+
+.logo {
+    display: block;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    width: 294px;
+    height: 72px;
+}
+
+.search {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #272f45;
+    border: 0;
+    border-bottom: 3px solid #92a1a9;
+    background-color: #272f45;
+    padding: 0px 2px 5px 30px;
+    background: url(../img/search.png) no-repeat left;
+    font-family: HKGrotesk;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+}
+.search__input {
+
+    margin: 10px 0;
+    background-color: transparent;
+    border: none;
+    font-family: HKGrotesk;
+    color: #92a1a9;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.gina {
+
+    padding: 0;
+    padding-top: 39px;
+    padding-left: 59px ;
+    margin: 53px 20px 20px 20px;
+    display: block;
+    max-width: 1160px;
+    max-height: 100%;
+    background: url(../img/gina.png)  center center no-repeat;
+    /*background-size: 100%;*/
+    position: relative;
+}
+
+.gina h1 {
+    margin: 0;
+    margin-top: 73px;
+    /*padding: 110px 0 0 59px;*/
+    text-transform: uppercase;
+    font-family: LeagueSpartan;
+    color: #fff;
+    font-size: 80px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    width: 220px;
+    height: 70px;
+}
+
+.gina p {
+    margin-top: 49px;
+    /*padding: 61px 0 0 49px;*/
+    font-family: HKGrotesk;
+    color: #ffffff;
+    font-size: 32px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+}
+
+.badge {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: url(../img/badge.png) no-repeat;
+    width: 112px;
+    height: 115px;
+}
+
+.kickstarter {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 42px;
+    background: url(../img/kickstarter_logo.png) no-repeat;
+    width: 89px;
+    height: 35px;
+}
+
+.rectange {
+    margin: 120px 0;
+    background: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #eec9a2;
+    box-sizing: border-box;
+    width: 160px;
+    height: 60px;
+    font-family: HKGrotesk;
+    color: #fff;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+.rectange:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #eec9a2;
+
+}
+
+.bay {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    /*margin: 20px ;*/
+    /*    max-height: 520px;*/
+}
+
+.bay p {
+    margin-top: 20px;
+    font-family: HKGrotesk;
+    color: #fff;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: right;
+}
+
+.beoplay {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin: 20px ;
+    display: block;
+    background: url(../img/Beoplay.png) no-repeat #64b8bf;
+    width: 560px;
+    height: 520px;
+}
+
+.leica {
+    position: relative;
+    display: block;
+    align-self: flex-end;
+    text-align: left;
+    margin: 20px;
+    background: url(../img/Leica.png) #7778c6;
+    background-position: right 0;
+    width: 560px;
+    height: 520px;
+}
+
+.bay h2 {
+    text-transform: uppercase;
+    margin-top: 63px;
+    font-family: LeagueSpartan;
+    color: #fff;
+    font-size: 48px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 42.523px; /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+}
+
+.beoplay h2, .beoplay p {
+    margin-right: 31px;
+}
+
+.leica h2, .leica p {
+    margin-left: 31px;
+    text-align: left;
+}
+
+.btn_buy1 {
+
+    position: absolute;
+    bottom: 200px;
+    right: 31px;
+    text-transform: uppercase;
+    border-width: 0px;
+    border-color: #eec9a2;
+    border-style: solid;
+    border-width: 3px;
+    box-sizing: border-box;
+    width: 120px;
+    height: 48px;
+    font-family: LeagueSpartan;
+    color: #fff;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    /*    margin-top:  63px;
+        margin-right: 31px;*/
+    background: none;
+    opacity: 0.8;
+}
+.btn_buy1:hover , .btn_buy2:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #eec9a2;
+
+    opacity: 1;
+}
+.btn_buy2 {
+    position: absolute;
+    bottom: 200px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    border-width: 0px;
+    border-color: #eec9a2;
+    border-style: solid;
+    border-width: 3px;
+    box-sizing: border-box;
+    width: 120px;
+    height: 48px;
+    font-family: LeagueSpartan;
+    color: #ffffff;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 63px;
+    margin-left: 31px;
+    background: none;
+}
+.molekula {
+    float: left;
+    margin: 20px ;
+    display: block;
+    background:url(../img/Molekule.png);
+    background-color: #e97864;
+    width: 360px;
+    height: 440px;
+}
+.signature {
+    float: left;
+    margin: 20px ;
+    display: block;
+    background: url(../img/P9.png);
+    background-color: #557581;
+    width: 360px;
+    height: 440px;
+}
+.dr {
+    float: left;
+    margin: 20px;
+    display: block;
+    background:url(../img/DR-II.png);
+    background-color: #82c9d8;
+    width: 360px;
+    height: 440px;
+}
+.details {
+
+    margin: 0 auto;
+    margin-top:34px;
+    font-family: LeagueSpartan;
+    color: #ffffff;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 0px;
+    background:none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #eec9a2;
+    box-sizing: border-box;
+    width: 120px;
+    height: 48px;
+}
+.details:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #eec9a2;
+
+}
+.buy2 {
+    text-align: center;
+}
+.buy2 p {
+    margin-top:67px;
+    font-family: HKGrotesk;
+    color: #ffffff;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+.buy2 h3 {
+    margin-top: 14px;
+    font-family: LeagueSpartan;
+    color: #ffffff;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 42.523px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.signature p {
+    margin-top: 263px;
+}
+.newsletter {
+    margin: 157px auto 0;
+    max-width: 807px;
+    height: 285px;
+    text-align: center;
+}
+span {
+    font-family: HKGrotesk;
+    color: #93a1a9;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+
+}
+.newsletter {
+    font-family: HKGrotesk;
+    color: #7f919b;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+
+}
+.newsletter p {
+    margin-top: 20px;
+    font-family: HKGrotesk;
+    color: #7f919b;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+.centr {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.email {
+    align-items:center;
+    margin: 51px auto 0;
+    font-family: HKGrotesk;
+    color: #92a1a9;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #63757e;
+    box-sizing: border-box;
+    background-color: #272f45;
+    width: 360px;
+    height: 60px;
+}
+.sub {
+    margin:20px auto 0;
+    text-transform:uppercase;
+    /*font-family: LeagueSpartan;*/
+    color: #fff;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #82c9d8;
+    box-sizing: border-box;
+    background-color: #272f45;
+    width: 360px;
+    height: 60px;
+}
+.sub:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #82c9d8;
+}
+.menu {
+    text-align:center;
+
+}
+.menu ul{
+
+
+
+    margin-top: 103px;
+    margin-bottom: 1px;
+    font-family: HKGrotesk;
+    color: #92a1a9;
+    font-size: 24px; 
+    font-weight: 300;
+
+}
+li {    
+    padding:20px;
+    display:inline;
+    list-style: disc;
+}
+li a {
+    text-decoration: none;
+    font-family: HKGrotesk;
+
+    color: #7f919b;
+
+    font-weight: 300
+}
+/*a:after {
+    content: "";  Добавляемый текст  
+    color: #7f919b;  Цвет текста  
+    background-color: #7f919b;  Цвет фона  
+    font-size: 1px;  Размер шрифта  
+    padding: 2px;  Поля вокруг текста  
+    border-radius:2px
+}*/
+.copy {
+    margin-top: 31px;
+    color: #7f919b;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    display: block;
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .bg {
+        padding: 0 0px 50px;
+    }
+    .header {
+        justify-content: space-around;
+    }
+    .gina {
+        position: relative;
+        top: 80px;
+        margin-bottom: 100px;
+        background-position: -500px 0;
+    }
+    .newsletter p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
