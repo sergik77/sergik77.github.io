@@ -1,0 +1,640 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12.07.2017, 6:44:14
+    Author     : User
+font-family: 'Raleway', sans-serif;
+
+
+*/
+@font-face {
+    font-family: Rockwell; /* Имя шрифта */
+    src: url(../font/RockwellRegular.woff); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Rockwell; /* Имя шрифта */
+    src: url(../font/RockwellBoldItalic.woff); /* Путь к файлу со шрифтом */
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin:  0 auto;
+    padding: auto; ;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.nav_header {
+/*    position: fixed;
+    top: 0;*/
+    background-color: #fff;
+    height: 147px;   
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo_h1 {
+    font-family: Rockwell;
+    color: #202242;
+    font-size: 30px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.logo_span {
+    font-weight: 700;
+}
+.logo_img {
+    padding: 0 18px 0 116px;
+}
+.memu_header   {
+    display: flex;
+    justify-content: space-between;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    padding: 0 30px;
+    font-family: Raleway;
+    color: #202242;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: #ffe13e;
+}
+
+.contact {
+    width: 315px;
+    margin-left: 47px;
+    margin-right: 97px;
+}
+.contact p {
+    font-family: Raleway;
+    color: #202242;
+    font-size: 12px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    margin-bottom: 22px;
+}
+.sparee {
+    background-color:  #ebebeb;
+    width: 1px;
+    height: 147px;
+}
+.sparee1 {
+    background-color: rgba(32, 34, 66, 0.31);
+    width: 1px;
+    height: 34px;
+}
+.contact_input {
+    background-color: #ffe13e;
+    border: none;
+    width: 122px;
+    height: 41px;
+    font-family: Raleway;
+    color: #202242;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.contact_input:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px #f4d31f;
+}
+.wrap span {
+    font-family: Lato;
+    color: #202242;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+/*-----------*/
+.splash {
+    margin: 0 auto;
+    background-position-y: 794px;
+    background-image: url(../img/splash.png) ;
+    width: 1400px;
+    height: 794px;
+    text-align: center;
+}
+.splash h1 {
+    font-family: Rockwell;
+    color:  #ffffff;
+    font-size: 48px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 234px;
+    margin-bottom: 34px;
+}
+.splash_span {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 30px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    margin-bottom: 59px;
+    padding: 0 auto;
+}
+.splash_img {
+    margin-bottom: 61px;
+}
+form {
+    width: 536px;
+    height: 54px;
+    margin: 0 auto;
+    border: 18px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+}
+.form_text {
+    border: none;
+    font-family: Raleway;
+    color: #2d2d2d;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    height: 14px;
+    padding: 20px 22px;
+}
+
+/*-strelka--*/
+.styled-select {
+    width: 240px;
+    overflow: hidden;
+    background: url(../img/strelka.png) no-repeat right #ffe13e;
+}
+.styled-select select {
+    background: transparent;
+    text-align: center;
+    width: 138px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+}
+.form_select {
+    height: 54px;
+    font-weight: 700;
+}
+.form_select_option {
+    font-family: Raleway;
+    background-color: #ffe13e;
+    width: 108px;
+    color: #2d2d2d;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    border: none;
+}
+.form_submit {
+    border: none;
+    padding: 18px;
+    background-color: #ffe13e;
+    width: 154px;
+    height: 54px;
+    font-family: Raleway;
+    color: #fff;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.form_submit:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px #000;
+}
+/*---services----*/
+.services {
+    display: flex;
+    width: 1400px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.services_h {
+    font-family: Raleway;
+    color: #fff;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+}
+.services_input {outline: none;}
+.services_p {
+    margin:27px 0 37px 0;
+    font-family: Raleway;
+    color: #fff;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    height: 62px;
+    width: 470px;
+    white-space: normal ;/*  Запрещаем перенос строк */
+    overflow: hidden;/* Обрезаем все, что не помещается в область */
+    outline: none;
+    padding: 5px; /* Поля вокруг текста */
+    /*    text-overflow: ellipsis;*/
+}
+.webhost {
+    padding: 0 88px 0 125px;
+    background-color: #202242;
+    flex-basis: 700px;
+    height: 693px;
+}
+.webhost_img {
+    margin: 116px 0 56px;
+    padding: 0;
+}
+.wrap_servicas {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.com {
+
+    padding: 0 125px 0 95px;
+    background-color: #ffe13e;
+    height: 693px;
+}
+.span {
+    height: 73px;
+    margin: 181px 0 90px;
+    padding: 0;
+    font-family: Raleway;
+    color: #202242;
+    font-size: 133.42px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    transform: scaleY(1.0026); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+.services_input {
+
+    background: none;
+    border-width: 3px;
+    border-color:  #fff;
+    border-style: solid;
+    width: 151px;
+    height: 52px;
+    font-family: Raleway;
+    color: #fff;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.services_input:focus ~ .services_p  {height: auto;
+}
+.services_input:focus  {
+    font-size: 0;
+    display: compact;
+    background: none;
+    overflow: hidden;
+    border-style: none;
+    color: transparent;
+}
+.services_input:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px #fff;
+}
+
+.features {
+    margin: 0 auto;
+    background-color: #fbf8f1;
+    width: 1400px;
+    height: 700px;
+    text-align: center;
+    background: url(../img/Features.png) center bottom no-repeat; 
+}
+.features_h1 {
+    padding: 98px 0 30px 0;
+    font-family: Raleway;
+    color: #202242;
+    font-size: 48px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+}
+.features_h3 {
+    padding-bottom: 88px;
+    font-family: Raleway;
+    color: #202242;
+    font-size: 24px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+}
+.features_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.features_reakct{
+    margin: 34px auto;
+    width: 69px;
+    border-bottom: 3px solid #8d8d99;
+}
+.features_h2 {
+    font-family: Rockwell;
+    color: #f4d31f;
+    font-size: 30px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+}
+.features_p {
+    margin-top: 26px;
+    width: 258px;
+    height: 62px;
+    color: #202242;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    white-space: normal ;/*  Запрещаем перенос строк */
+    overflow: hidden;/* Обрезаем все, что не помещается в область */
+    outline: none;
+    padding: 5px; /* Поля вокруг текста */
+}
+.company {
+    margin: 87px 113px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.company_wrap {
+    align-items: flex-start;
+    text-align: center;
+    /*margin-right: 50px;*/
+    width: 325px;
+    /*height: 126px;*/
+}
+.company_h1 {
+    padding: 2px;
+    font-family: Raleway;
+    color: #202242;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 36px; /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+}
+.company_p {
+    padding-top: 20px;
+    height: 70px;
+    font-family: Raleway;
+    color: #adadad;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    overflow: hidden;
+}
+.wrap-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+       justify-content: center; 
+}
+.company_img {
+    margin: 10px;
+    align-items: center;
+}
+.test {
+    width: 1172px;
+    height: 230px;
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: space-between
+}
+.grup {
+    background-color: rgba(245, 243, 243, 0.5);
+    width: 372px;
+    height: 179px;
+}
+.grup_p {
+    padding: 30px 32px 5px 21px;
+    font-family: Rockwell;
+    color: #a4a4a4;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-style: italic;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    font-family: Rockwell;
+    color: #696969;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-style: italic;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.grup_span {
+    margin-left: 29px;
+    font-family: Raleway;
+    color: #696969;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.grup_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.grup_img {
+    width: 90px;
+    height: 100%;
+    margin-right: 47px;
+}
+/*---footer--*/
+.plan {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 210px;
+    background-color: #202242;
+    width: 980px;
+    height: 90px;
+}
+.plan_wrap {
+    display: flex;
+    flex-direction: column;
+}
+.plan_h1 {
+    margin: 8px 0;
+    font-family: Raleway;
+    color: #fff;
+    font-size: 36px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.plan_p {
+    margin: 10px 0 0 0;
+    font-family: Raleway;
+    color: #67687b;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.plan_input {
+    margin: auto 0;
+    border-width: 4px;
+    border-color: #fff;
+    border-style: solid;
+    background-color: #ffe13e;
+    width: 228px;
+    height: 88px;
+    font-family: Raleway;
+    color: #202242;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+}
+.plan_input:hover {
+    cursor: pointer;
+}
+.basement {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(32, 34, 66, 0.9);
+    padding: 97px 115px 18px 115px;
+    margin: 0;
+    height: 500px;
+}
+.maps {
+    margin: 0px;
+    background: url(../img/maps.png) no-repeat ;
+    height: 409px;
+}
+.marker {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.maps_img {
+    margin-top: 235px;
+    margin-left: 618px;
+    margin-right: 20px;
+}
+.maps_span {
+    margin-left: 0;
+    padding-left: 0;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.nav_footer{
+    width: 1166px;
+    height: 409px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Raleway;
+    color: #fff;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 36px; /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    margin: 0; 
+    width: 200px;
+}
+.nav_h1 {
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+.menu_footer, .nav_h1 {
+    margin-right: 0;
+}
+.menu_footer > li > a {
+    font-family: Raleway;
+    color: #fff;
+    font-size: 16px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 36px; /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    text-transform: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+.menu_footer > li > a:hover {
+    color: #ffe13e;
+} 
+.line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    width: 65px;
+    text-align: right;
+    padding-right: 0;
+    margin-right: 0;
+}
+.soc {
+    margin-right: 0;
+}
+.fa {
+    /*   font-family: FontAwesome;*/
+
+    margin: 0 0 0 10px;
+    padding: 0;
+    color: #ffe13e ;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 72px; /* Приближение из-за подстановки шрифтов */
+    text-align: right; 
+}
+.fa:hover {
+    color: #000;
+}
+.back {
+    font-family: Raleway;
+    color: #fff;
+    font-size: 12px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 36px; /* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    padding: 0;
+    margin-top: 0px;
+    margin-right: 0;
+}
+.footer {
+    width: 1000px;
+    text-align: center;
+}
+.footer_p {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    margin-top: 18px;
+}
