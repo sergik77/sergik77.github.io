@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22.08.2017, 22:02:53
+    Author     : User
+*/
+* {
+  margin: 0; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #2a6592;
+  color: #ccc; }
+  header img {
+    margin: 10px calc((100% - 1420px) / 2); }
+
+.content {
+  padding: 30px 30px 200px;
+  margin: auto;
+  max-width: 1400px;
+  height: 100vh;
+  background: #8ec3eb; }
+  .content__flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; }
+  .content__wrap {
+    display: block;
+    margin: 20px; }
+  .content h1 {
+    text-align: center;
+    margin: 20px; }
+  .content img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); }
+
+footer {
+  padding: 30px 0 50px;
+  margin: auto;
+  width: 100%;
+  background: #7e9a9a;
+  color: #ccc;
+  text-align: center;
+  position: fixed;
+  bottom: 0; }
+
+@media screen and (max-width: 1200px) {
+  .content {
+    height: 100%; } }
+@media screen and (max-width: 1400px) {
+  header img {
+    margin-left: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
