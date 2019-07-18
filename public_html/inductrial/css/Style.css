@@ -12,6 +12,7 @@
 }   
 
 body {
+    background-color: #272f45;
 }
 
 .bg {
@@ -163,7 +164,7 @@ header {
     text-align: right;
     margin: 20px ;
     display: block;
-    background: url(../img/Beoplay.png) no-repeat #64b8bf;
+    background: url(../img/Beoplay.png) no-repeat #5FBAA4;
     width: 560px;
     height: 520px;
 }
@@ -174,7 +175,7 @@ header {
     align-self: flex-end;
     text-align: left;
     margin: 20px;
-    background: url(../img/Leica.png) #7778c6;
+    background: url(../img/Leica.png) no-repeat #7778c6;
     background-position: right 0;
     width: 560px;
     height: 520px;
@@ -431,7 +432,12 @@ li a {
 }
 
 /* Large desktop */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    .beoplay, .leica {
+        mix-width: 400px;
+    }
+
+}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {  }
@@ -486,5 +492,8 @@ li a {
     }
     span .copy {
         margin-top: 80px;
+    }
+    .beoplay, .leica {
+        max-width: 400px;
     }
 }
