@@ -30,7 +30,7 @@ font-family: 'Raleway', sans-serif;
 
 body {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1920px;
 }
 .nav_header {
 /*    position: fixed;
@@ -40,7 +40,7 @@ body {
 }
 .wrap {
     margin: 0 auto;
-    max-width: 1400px;
+    /*max-width: 1400px;*/
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -141,7 +141,7 @@ a:hover {
     margin: 0 auto;
     background-position-y: 794px;
     background-image: url(../img/splash.png) ;
-    width: 1400px;
+    background-size: cover;
     height: 794px;
     text-align: center;
 }
@@ -234,7 +234,7 @@ form {
 /*---services----*/
 .services {
     display: flex;
-    width: 1400px;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
     padding: 0;
@@ -267,7 +267,7 @@ form {
 .webhost {
     padding: 0 88px 0 125px;
     background-color: #202242;
-    flex-basis: 700px;
+    flex-basis: 980px;
     height: 693px;
 }
 .webhost_img {
@@ -282,6 +282,7 @@ form {
     align-items: center;
 }
 .com {
+    flex-basis: 980px;
 
     padding: 0 125px 0 95px;
     background-color: #ffe13e;
@@ -331,7 +332,7 @@ form {
 .features {
     margin: 0 auto;
     background-color: #fbf8f1;
-    width: 1400px;
+    /*width: 1400px;*/
     height: 700px;
     text-align: center;
     background: url(../img/Features.png) center bottom no-repeat; 
@@ -478,7 +479,7 @@ form {
     justify-content: space-between;
     padding: 90px 210px;
     background-color: #202242;
-    width: 980px;
+    /*width: 980px;*/
     height: 90px;
 }
 .plan_wrap {
